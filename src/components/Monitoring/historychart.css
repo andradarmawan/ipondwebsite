@@ -1,0 +1,7 @@
+/* historychart.css */
+@media (max-width: 768px) {
+    .responsive-container {
+        width: 100%;
+        aspect-ratio: 1; /* Atur aspek rasio untuk layar handphone */
+    }
+}
