@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GaugeChart from 'react-gauge-chart';
-import { getDatabase, ref, onValue } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
 
 function GaugeC() {
@@ -28,7 +28,7 @@ function GaugeC() {
                 percent={turbidity / 3000} // Ubah rentang sesuai kebutuhan
                 formatTextValue={() => `${turbidity} NTU`}
                 colors={["#00FF00", "#FFFF00", "#FF0000"]}
-                needleColor="#345243"
+                needleColor="#CCF2B9"
                 textColor="#345243"
             />
         </div>

@@ -12,9 +12,8 @@ import {
 } from "recharts";
 import { useState } from "react";
 import { useEffect } from "react";
-import { getDatabase, ref, onValue } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
-import Card from "react-bootstrap/Card";
 
 function HistoryChart() {
 	const [data, setData] = useState([]);

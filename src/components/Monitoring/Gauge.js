@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import GaugeChart from 'react-gauge-chart';
-import { getDatabase, ref, onValue } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
 
 
@@ -29,9 +29,8 @@ function Gauge() {
                 percent={pHValue / 14} // Konversi nilai pH ke proporsi
                 formatTextValue={() => `${pHValue}`}
                 colors={["#FF0000", "#FFFF00", "#00FF00"]} 
-                needleColor="#345243"
-                textColor="#345243"
-                
+                needleColor="#CCF2B9"
+                textColor="#345243"  
             />
         </div>
     );
