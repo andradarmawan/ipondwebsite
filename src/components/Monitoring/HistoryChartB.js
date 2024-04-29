@@ -14,9 +14,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { getDatabase, ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
-import Card from "react-bootstrap/Card";
 
-function HistoryChart() {
+
+function HistoryChartB() {
 	const [data, setData] = useState([]);
 
 	useEffect (() => {
@@ -25,7 +25,7 @@ function HistoryChart() {
             const fetchdata = snapshot.val();
 			const chartdata = Object.keys(fetchdata).map((key) => ({
 				date: fetchdata[key].Tanggal, 
-				pH: parseFloat(fetchdata[key].pH)
+				Suhu: parseFloat(fetchdata[key].Temperature)
 			}));
 			setData(chartdata);
         });
@@ -39,16 +39,16 @@ function HistoryChart() {
 		<>
 			<ResponsiveContainer height={350}>
 				<LineChart data={data}  width={500} height={300} margin={{ top: 20, right: 30, left: 20, bottom: 5}}>
-					<CartesianGrid strokeDasharray="3 1"/>
+					<CartesianGrid strokeDasharray="3 1" />
 					<XAxis dataKey="date" interval={"preserveStartEnd"} />
 					<YAxis></YAxis>
 					<Legend />
 					<Tooltip />
-					<Line type="monotone" dataKey="pH"  strokeWidth={1} stroke="red"/>
+                    <Line type="monotone" dataKey="Suhu" strokeWidth={1} stroke="blue"/>
 				</LineChart>
 			</ResponsiveContainer>
 		</>
 	);
 }
 
-export default HistoryChart;
+export default HistoryChartB;

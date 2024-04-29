@@ -140,7 +140,7 @@
   width: 100%;
 }
 
-/* theme Switch */
+/* theme Switch
 #toggle {
   width: 50px;
   display: flex;
@@ -167,4 +167,4 @@
 }
 .dark-mode #toggle .toggle-inner {
   background-color: #202523;
-}
+} */

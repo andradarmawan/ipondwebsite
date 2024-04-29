@@ -31,6 +31,7 @@ function Gauge() {
                 colors={["#FF0000", "#FFFF00", "#00FF00"]} 
                 needleColor="#345243"
                 textColor="#345243"
+                
             />
         </div>
     );

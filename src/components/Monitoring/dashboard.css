@@ -26,6 +26,18 @@
   overflow: hidden !important;
 }
 
+.project-card-view-history {
+  background: transparent !important;
+  color: var(--clr-txt) !important;
+  box-shadow: var(--shadow) !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.project-card-view-history:hover {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+}
+
 .btn-primary {
   color: var(--clr-txt) !important;
   background: transparent !important;

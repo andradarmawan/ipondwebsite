@@ -5,7 +5,8 @@ import ProjectCards from "./ProjectCards";
 import ProjectCardsB from "./ProjectCardsB"; // Import ProjectCardsB
 import ProjectCardsC from "./ProjectCardsC"; // Import ProjectCardsC
 import ProjectCardsD from "./ProjectCardsD";
-import HistoryChart from "./HistoryChart";
+import ProjectCardsE from "./ProjectCardsE";
+import ProjectCardsF from "./ProjectCardsF";
 
 import "./historychart.css"
 import "./dashboard.css";
@@ -33,7 +34,15 @@ function Dashboard() {
           <Col md={6} lg={4} className="project-card">
             <ProjectCardsC />
           </Col>
-          <ProjectCardsD/>
+          <Col md={20} lg={20} className="project-card">
+           <ProjectCardsD/>
+          </Col>
+          <Col md={20} lg={20} className="project-card">
+           <ProjectCardsE/>
+          </Col>
+          <Col md={20} lg={20} className="project-card">
+           <ProjectCardsF/>
+          </Col>
         </Row>
       </Container>
       <ScrollToTop />

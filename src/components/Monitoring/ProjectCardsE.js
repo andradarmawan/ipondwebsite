@@ -1,17 +1,17 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import HistoryChart from "./HistoryChart";
+import HistoryChartB from "./HistoryChartB";
 
-function ProjectCardsD() {
+function ProjectCardsE() {
     return (
         <Card className="project-card-view-history">
             <Card.Body>
                 <Card.Title>History Data</Card.Title>
                 {/* Menggunakan komponen GaugeC untuk menampilkan data kekeruhan */}
-                <HistoryChart/>
+                <HistoryChartB/>
             </Card.Body>
         </Card>
     );
 }
 
-export default ProjectCardsD;
+export default ProjectCardsE;
