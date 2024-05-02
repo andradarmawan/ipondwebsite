@@ -3,8 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeIcon from "../../Assets/homeicons.svg";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
-
+import { doc } from "./document"
 import Home2 from "./Home2";
+import Home3 from "./Home3";
 import Type from "./Type";
 import "./home.css";
 
@@ -44,6 +45,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
+      <Home3 Assets={doc}/>
       <ScrollToTop />
     </section>
   );

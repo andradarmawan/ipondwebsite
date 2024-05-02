@@ -1,20 +1,64 @@
+import { Link } from "react-scroll";
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import "./footer.css";
+import "./footer.css"
+import logoLight from "../../Assets/logoLight.png";
 
 function Footer() {
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright"></Col>
-        <Col md="4" className="footer-copywright">
-          <span>
-            Designed and Developed by{" "}
-            <i className="primary-header">My I-Pond Team</i>
-          </span>
-        </Col>
-      </Row>
-    </Container>
+    <footer className="footer--container">
+      <div className="footer--link--container">
+      <div>
+          <img src={logoLight} alt="LogoIpond"/>
+        </div>
+        <div className="footer--items">
+          <ul>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="about"
+                className="text-md"
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="documentation"
+                className="text-md"
+              >
+                Documentation
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="monitoring"
+                className="text-md"
+              >
+                Monitoring
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr className="divider" />
+      <div className="footer--content--container">
+        <p className="footer--content">Made by Team My I-Pond</p>
+      </div>
+    </footer>
   );
 }
 

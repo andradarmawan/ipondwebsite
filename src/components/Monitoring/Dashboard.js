@@ -13,7 +13,7 @@ import "./dashboard.css";
 
 function Dashboard() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" id="monitoring">
       <Container>
         <h1 className="project-heading">
           <strong className="Fluorescent-Blue">MONITORING</strong>
