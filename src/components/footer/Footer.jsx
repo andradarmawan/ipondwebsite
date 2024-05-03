@@ -1,14 +1,14 @@
 import { Link } from "react-scroll";
 import React from "react";
-import "./footer.css"
+import "./footer.css";
 import logoLight from "../../Assets/logoLight.png";
 
 function Footer() {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
-      <div>
-          <img src={logoLight} alt="LogoIpond"/>
+        <div>
+          <img src={logoLight} alt="LogoIpond" />
         </div>
         <div className="footer--items">
           <ul>
