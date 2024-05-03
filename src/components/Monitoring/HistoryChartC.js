@@ -31,8 +31,8 @@ function HistoryChart() {
         .filter((item) => {
           if (startDate && endDate) {
             return (
-              item.date >= startDate.startOf("day").toDate() &&
-              item.date <= endDate.endOf("day").toDate()
+              item.date >= startDate?.startOf("day").toDate() &&
+              item.date <= endDate?.endOf("day").toDate()
             );
           }
           return true;
@@ -45,8 +45,8 @@ function HistoryChart() {
   }, [startDate, endDate]);
 
   const handleDateFilter = (start, end) => {
-    setStartDate(start ? moment(start) : null);
-    setEndDate(end ? moment(end) : null);
+    setStartDate(start ? moment(start).startOf('day') : null);
+    setEndDate(end ? moment(end).endOf('day') : null);
   };
 
   return (
