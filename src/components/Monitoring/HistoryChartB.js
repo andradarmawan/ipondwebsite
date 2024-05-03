@@ -24,19 +24,19 @@ function HistoryChart() {
     const unsubscribedata = onValue(dataref, (snapshot) => {
       const fetchdata = snapshot.val();
       const chartdata = Object.keys(fetchdata)
-        .map((key) => ({
-          date: new Date(fetchdata[key].Tanggal),
-          Suhu: parseFloat(fetchdata[key].Temperature),
-        }))
-        .filter((item) => {
-          if (startDate && endDate) {
-            return (
-              item.date >= startDate?.startOf("day").toDate() &&
-              item.date <= endDate?.endOf("day").toDate()
-            );
-          }
-          return true;
-        });
+      .map((key) => ({
+        date: moment(fetchdata[key].Tanggal).toDate(), // Use moment to parse the date
+        Suhu: parseFloat(fetchdata[key].Temperature),
+      }))
+      .filter((item) => {
+        if (startDate && endDate) {
+          return (
+            item.date >= startDate.startOf("day").toDate() &&
+            item.date <= endDate.endOf("day").toDate()
+          );
+        }
+        return true;
+      });
       setData(chartdata);
     });
     return () => {
