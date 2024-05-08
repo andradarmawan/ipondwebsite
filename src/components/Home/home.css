@@ -290,6 +290,10 @@
   color: white;
   font-size: 30px;
 }
+.card-caption {
+  color: white;
+  font-size: 30px;
+}
 
 .carousel_arrow_left,
 .carousel_arrow_right {

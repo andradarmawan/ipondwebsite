@@ -60,6 +60,7 @@ function Home3({ Assets }) {
                 <img className="card_image" src={image.image} alt="" />
                 <div className="card_overlay">
                   <h2 className="card_title">{image.title}</h2>
+                  <p className="card-caption">{image.caption}</p>
                 </div>
               </div>
             );

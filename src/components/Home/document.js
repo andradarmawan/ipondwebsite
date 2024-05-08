@@ -4,19 +4,19 @@ export const doc = [
     title: "Pembuatan Alat"
  },
  {
-    image: "",
-    title: "Doc 2"
+    image: "/2.JPG",
+    title: "Survei Tempat Implementasi"
  },
  {
-   image:"",
-   title:"Doc 3"
+   image:"/3.JPG",
+   title:"Impelementasi Alat (1)"
  },
  {
-   image:"",
-   title:"Doc 4"
+   image:"/4.JPG",
+   title:"Implementasi Alat (2)"
  },
  {
-   image:"",
-   title:"Doc 5"
+   image:"/5.JPG",
+   title:"Pengukuran yang Dilakukan"
  }
 ]

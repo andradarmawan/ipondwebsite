@@ -70,7 +70,7 @@ function HistoryChart() {
           }
         />
       </div>
-      <ResponsiveContainer height={350}>
+      <ResponsiveContainer width="100%" height={400}>
         <LineChart
           data={data}
           width={500}
