@@ -22,7 +22,7 @@ function Footer() {
                 to="about"
                 className="text-md"
               >
-                About Us
+                Tentang Kita
               </Link>
             </li>
             <li>
@@ -35,20 +35,7 @@ function Footer() {
                 to="documentation"
                 className="text-md"
               >
-                Documentation
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="monitoring"
-                className="text-md"
-              >
-                Monitoring
+                Dokumentasi
               </Link>
             </li>
           </ul>
@@ -56,7 +43,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made by Team My I-Pond</p>
+        <p className="footer--content">Dibuat oleh Tim My I-Pond</p>
       </div>
     </footer>
   );
