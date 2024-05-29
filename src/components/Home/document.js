@@ -5,7 +5,7 @@ export const doc = [
  },
  {
     image: "/2.JPG",
-    title: "Survei Tempat Implementasi"
+    title: "Tempat Implementasi"
  },
  {
    image:"/3.JPG",

@@ -6,9 +6,9 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Your comprehensive destination ",
-          "For measuring Water Turbidity, pH, and Temperature",
-          "Providing you with accurate information to maintain the cleanliness and health of your water.",
+          "Tujuan Komprehensif Anda ",
+          "Untuk Memonitoring Kualitas Air Tambak Ikan Nila Melalui pH, Kekeruhan, dan Suhu",
+          "Membantu Kamu Mendapatkan Informasi yang Akurat melalui My I-Pond🙌🏻.",
         ],
         autoStart: true,
         loop: true,

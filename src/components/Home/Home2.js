@@ -11,7 +11,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-              <span className="primary-header"> ABOUT </span> US
+              <span className="primary-header"> Tentang </span> Kita
             </h1>
             <p className="home-about-body" data-aos="fade-up">
               <br />

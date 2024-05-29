@@ -29,7 +29,7 @@ function Home3({ Assets }) {
     <Container fluid className="home-section" id="documentation">
       <Container>
         <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-          <span className="primary-header-documentation"> Documentation </span>
+          <span className="primary-header-documentation"> Dokumentasi </span>
         </h1>
         <br></br>
         <br></br>
