@@ -6,8 +6,8 @@ function ProjectCardsF() {
     return (
         <Card className="project-card-view-history">
             <Card.Body>
-                <Card.Title>History Data</Card.Title>
-                {/* Menggunakan komponen GaugeC untuk menampilkan data kekeruhan */}
+                <Card.Title>Data History Kekeruhan</Card.Title>
+                {/* Menggunakan komponen history untuk menampilkan data kekeruhan */}
                 <HistoryChartC/>
             </Card.Body>
         </Card>

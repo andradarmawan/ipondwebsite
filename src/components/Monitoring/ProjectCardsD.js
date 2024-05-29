@@ -6,8 +6,8 @@ function ProjectCardsD() {
     return (
         <Card className="project-card-view-history">
             <Card.Body>
-                <Card.Title>History Data</Card.Title>
-                {/* Menggunakan komponen GaugeC untuk menampilkan data kekeruhan */}
+                <Card.Title>Data History pH</Card.Title>
+                {/* Menggunakan komponen history untuk menampilkan data pH*/}
                 <HistoryChart/>
             </Card.Body>
         </Card>
