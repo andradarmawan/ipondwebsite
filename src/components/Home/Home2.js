@@ -15,10 +15,10 @@ function Home2() {
             </h1>
             <p className="home-about-body" data-aos="fade-up">
               <br />
-              We are My I-Pond<i className="primary-header">
+              Kita tim My I-Pond<i className="primary-header">
               </i>{" "}
               <br />
-              <br />Website responsive untuk memantau kualitas air tambak nila secara real-time. {" "}
+              <br />Website responsive untuk memantau kualitas air tambak nila secara realtime. {" "}
               <i className="primary-header"></i>
               <br />
               <br />Pantau kualitas air, jaga kesehatan ikan, hasilkan panen berkualitas tinggi.

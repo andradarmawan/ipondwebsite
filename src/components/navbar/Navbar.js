@@ -70,7 +70,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                Home
+                Beranda
               </Nav.Link>
             </Nav.Item>
 
