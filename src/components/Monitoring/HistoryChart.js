@@ -53,7 +53,7 @@ function HistoryChart() {
   return (
     <>
       <div className="date-filter">
-        <label>Start Date:</label>
+        <label>Tanggal Awal:</label>
         <input
           type="date"
           onChange={(e) =>
@@ -62,7 +62,7 @@ function HistoryChart() {
         />
       </div>
       <div className="date-filter">
-        <label>End Date:</label>
+        <label>Tanggal Akhir:</label>
         <input
           type="date"
           onChange={(e) =>
