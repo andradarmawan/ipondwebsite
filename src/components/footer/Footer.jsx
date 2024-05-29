@@ -22,7 +22,7 @@ function Footer() {
                 to="about"
                 className="text-md"
               >
-                Tentang Kita
+                Tentang Kami
               </Link>
             </li>
             <li>

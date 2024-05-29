@@ -8,7 +8,7 @@ function Type() {
         strings: [
           "Tujuan komprehensif anda",
           "Dapat memonitoring kualitas air tambak melalui pH, kekeruhan, dan suhu",
-          "Membantu kamu mendapatkan informasi yang akurat melalui My I-Pond🙌🏻.",
+          "Membantu anda mendapatkan informasi yang akurat melalui My I-Pond🙌🏻.",
         ],
         autoStart: true,
         loop: true,

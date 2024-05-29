@@ -21,7 +21,7 @@ function Home() {
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>{" "}
-                Kita dari
+                Kami dari
               </h1>
 
               <h1 className="heading-name">
