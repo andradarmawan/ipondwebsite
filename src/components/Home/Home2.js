@@ -11,11 +11,11 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }} data-aos="fade-right">
-              <span className="primary-header"> Tentang </span> Kita
+              <span className="primary-header"> Tentang </span> Kami
             </h1>
             <p className="home-about-body" data-aos="fade-up">
               <br />
-              Kita tim My I-Pond<i className="primary-header">
+              Kami tim My I-Pond<i className="primary-header">
               </i>{" "}
               <br />
               <br />Website responsive untuk memantau kualitas air tambak nila secara realtime. {" "}
