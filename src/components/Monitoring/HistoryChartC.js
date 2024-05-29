@@ -61,7 +61,7 @@ function HistoryChart() {
         />
       </div>
       <div className="date-filter">
-        <label>Tanggal Berakhir:{" "}</label>
+        <label>Tanggal Berakhir:</label>
         <input
           type="date"
           onChange={(e) =>
