@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import GaugeChart from 'react-gauge-chart';
+import GaugeComponent from "react-gauge-component";
 import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
 
@@ -21,18 +21,74 @@ function GaugeC() {
 
     // Konfigurasi GaugeChart untuk menampilkan kekeruhan
     return (
-        <div style={{ width: "100%" }}>
-            <GaugeChart 
-                id="turbidity-gauge" 
-                nrOfLevels={10}
-                percent={turbidity / 3000} // Ubah rentang sesuai kebutuhan
-                formatTextValue={() => `${turbidity} NTU`}
-                colors={["#00FF00", "#FFFF00", "#FF0000"]}
-                needleColor="#CCF2B9"
-                textColor="#345243"
+        <div style={{ width: "100%" }} className="gauge-component-class">
+            <GaugeComponent
+                type="semicircle"
+                arc={{
+                    width: 0.2,
+                    padding: 0.005,
+                    cornerRadius: 1,
+                    subArcs: [
+                        {
+                            limit: 0,
+                            color: '#FF0000',
+                            showTick: true,
+                            tooltip: {
+                                text: 'Air Sangat Jernih'
+                            }
+                        },
+                        {
+                            limit: 100,
+                            color: '#5BE12C',
+                            showTick: true,
+                            tooltip: {
+                                text: 'Air Jernih'
+                            }
+                        },
+                        {
+                            limit: 500, 
+                            color: '#ffff00', 
+                            showTick: true,
+                            tooltip: {
+                                text: 'Air Keruh'
+                            }
+                        },
+                        {
+                            limit: 1000, 
+                            color: '#FF0000', 
+                            showTick: true,
+                            tooltip: {
+                                text: 'Air Sangat Keruh'
+                            }
+                        }
+                    ]
+                }}
+                pointer={{
+                    color: '#CCF2B9',
+                    length: 0.80,
+                    width: 14,
+                }}
+                labels={{
+                    valueLabel: { 
+                        formatTextValue: value => value + ' NTU'
+                    },
+                    tickLabels: {
+                        type: 'outer',
+                        valueConfig: { 
+                            formatTextValue: value => value + ' NTU', 
+                            fontSize: 10
+                        },
+                        ticks: [
+                        ]
+                    }
+                }}
+                value={turbidity}
+                minValue={0}
+                maxValue={1000}
             />
         </div>
     );
 }
 
 export default GaugeC;
+

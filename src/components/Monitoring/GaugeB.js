@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import GaugeChart from 'react-gauge-chart';
+import GaugeComponent from "react-gauge-component";
 import { ref, onValue } from "firebase/database";
 import { db } from "../../firebase";
 
@@ -21,15 +21,78 @@ function GaugeB() {
 
     // Konfigurasi GaugeChart untuk menampilkan suhu
     return (
-        <div style={{ width: "100%" }}>
-            <GaugeChart 
-                id="temperature-gauge" 
-                nrOfLevels={10} 
-                percent={temperature / 100} // Ubah rentang sesuai kebutuhan
-                formatTextValue={() => `${temperature}°C`}
-                colors={["#00FF00", "#FFFF00", "#FF0000"]}
-                needleColor="#CCF2B9"
-                textColor="#345243"
+        <div style={{ width: "100%" }} className="gauge-component-class">
+            <GaugeComponent
+                type="semicircle"
+                arc={{
+                    width: 0.2,
+                    padding: 0.005,
+                    cornerRadius: 1,
+                    subArcs: [
+                        {
+                            limit: 0,
+                            color: '#FF0000',
+                            showTick: true,
+                            tooltip: {
+                                text: 'Suhu Air Sangat Dingin'
+                            }
+                        },
+                        {
+                            limit: 12,
+                            color: '#94f7ff',
+                            showTick: true,
+                            tooltip: {
+                                text: 'Suhu Air Sangat Dingin'
+                            }
+                        },
+                        {
+                            limit: 22,
+                            color: '#3fd0d4',
+                            showTick: true,
+                            tooltip: {
+                                text: 'Suhu Air Dingin'
+                            }
+                        },
+                        {
+                            limit: 30, 
+                            color: '#5BE12C', 
+                            showTick: true,
+                            tooltip: {
+                                text: 'Suhu Air Normal'
+                            }
+                        },
+                        {
+                            limit: 40, 
+                            color: '#FF0000', 
+                            showTick: true,
+                            tooltip: {
+                                text: 'Suhu Air Sangat Panas'
+                            }
+                        }
+                    ]
+                }}
+                pointer={{
+                    color: '#CCF2B9',
+                    length: 0.80,
+                    width: 14,
+                }}
+                labels={{
+                    valueLabel: { 
+                        formatTextValue: value => value + 'ºC'
+                    },
+                    tickLabels: {
+                        type: 'outer',
+                        valueConfig: { 
+                            formatTextValue: value => value + 'ºC', 
+                            fontSize: 10
+                        },
+                        ticks: [
+                        ]
+                    }
+                }}
+                value={temperature}
+                minValue={0}
+                maxValue={40}
             />
         </div>
     );

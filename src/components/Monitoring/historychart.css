@@ -18,3 +18,6 @@
         margin-right: 0;
     }
 }
+.gauge-component-class text {
+    fill: #000000 !important;
+}
